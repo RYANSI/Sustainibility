@@ -1,0 +1,65 @@
+header {
+  /* border: black 100px; */
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.Logo_name{
+ font-family: "Poppins", "sans-serif";
+ font-size: 2.5rem;
+ font-weight: 600;
+}
+
+.Navbar_linkDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar_link{
+ font-family: "Poppins", "sans-serif";
+ font-weight: 500;
+ font-size: 1.6rem;
+ margin-left: 10rem;
+ text-decoration: none;
+ transition: .5s all ease;
+ color: black;
+}
+
+.Navbar_link:hover {
+  color: #91C788;
+
+}
+
+
+.Navbar_link:first-of-type{
+  margin-left: 0;
+}
+
+.Navbar_link:visited{
+ text-decoration: none;
+}
+
+  @media only screen and (max-width: 36.25em){
+    nav{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .Logo_name{
+      padding-right: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  @media only screen and (max-width: 27.5em){
+        .Navbar_link{
+        margin-left: 6rem;
+        }        
+  }
